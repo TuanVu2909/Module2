@@ -1,4 +1,4 @@
-package Date0504;
+package Date05_04;
 
 import java.util.Scanner;
 
@@ -16,15 +16,14 @@ public class TongCot {
         int size = scanner.nextInt();
         int sum =0;
 
-        for (int i=0; i< arr.length; i++){
-            for (int j =0; j< arr[i].length; j++){
-                if (size == j){
-                   sum += arr[i][j];
-               }
+        for (int i=0; i< arr.length; i++) {
+            if (size < arr.length && size < 0) {
+                sum += arr[i][size];
             }
-
         }
         System.out.println(sum);
+        }
+
 
     }
-}
+

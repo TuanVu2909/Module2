@@ -1,4 +1,4 @@
-package Date0404;
+package Date04_04;
 
 import java.util.Scanner;
 

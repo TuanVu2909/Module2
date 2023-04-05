@@ -1,4 +1,4 @@
-package Date0403;
+package Date04_03;
 
 public class Total20Prime {
     public static void main(String[] args) {
