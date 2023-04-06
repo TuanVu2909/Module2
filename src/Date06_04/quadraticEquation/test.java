@@ -33,7 +33,7 @@ public class test {
         return (-ptb2.b + Math.sqrt(getDiscriminant(ptb2))/2* ptb2.a);
     }
     public static double getRoot2(khoiTaoPtb2 ptb2) {
-       
+
         return   (-ptb2.b - Math.sqrt(getDiscriminant(ptb2))/2* ptb2.a);
     }
 }
