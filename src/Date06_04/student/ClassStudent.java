@@ -19,13 +19,15 @@ public class ClassStudent {
     double ly;
     double hoa;
 
-    public ClassStudent(String ten, int tuoi, double toan, double ly, double hoa) {
-        this.ten = ten;
-        this.tuoi = tuoi;
-        this.toan = toan;
-        this.ly = ly;
-        this.hoa = hoa;
+    public ClassStudent() {
     }
+    //    public ClassStudent(String ten, int tuoi, double toan, double ly, double hoa) {
+//        this.ten = ten;
+//        this.tuoi = tuoi;
+//        this.toan = toan;
+//        this.ly = ly;
+//        this.hoa = hoa;
+//    }
 
     public String getTen() {
         return ten;
