@@ -27,4 +27,14 @@ public class PartTime extends Employee{
     public int getLuongFullTime(){
        return this.wordTime*25000;
     }
+
+    @Override
+    public String toString() {
+        return "PartTime{" +
+                "id=" +id  +
+                ", tên=" + name +
+                ", tuổi='" +  age + '\'' +
+                ", Lương=" + wordTime +
+                '}';
+    }
 }

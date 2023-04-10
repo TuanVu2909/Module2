@@ -20,11 +20,17 @@ public class FullTime extends Employee{
         super();
         this.yearOfExperience = yearOfExperience;
     }
-
-    public static void main(String[] args) {
-
-    }
     public  int getLuongFullTime(){
         return this.yearOfExperience*20000000;
+    }
+
+    @Override
+    public String toString() {
+        return "FullTime{" +
+                "id=" +id +
+                ", tên=" + name +
+                ", tuổi='" +  age + '\'' +
+                ", lương=" + yearOfExperience +
+                '}';
     }
 }
