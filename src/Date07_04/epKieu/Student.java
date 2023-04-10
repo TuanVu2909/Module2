@@ -1,4 +1,6 @@
 package Date07_04.epKieu;
 
-public class Student extends  Demo{
+import Date07_04.epKieu.Demo;
+
+public class Student extends Demo {
 }
