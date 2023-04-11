@@ -57,7 +57,10 @@ public class Main {
                    employees = deleteEmployee(employees,scanner);
                    displayAll(employees);
                    break;
-
+               case 5:
+                   displayAll(employees);
+                   displayAll(updateEmployee(employees,scanner)) ;
+                    break;
                default:
                    System.out.println("bạn nhập lại lựa chọn" +number);
            }
@@ -124,8 +127,7 @@ public class Main {
     public static Employee[] addPartTime(Employee[] employees, Scanner scanner){
 
         System.out.println("Nhập id");
-        int id  = scanner.nextInt();
-        scanner.nextLine();
+        int id  =  Integer.parseInt(scanner.nextLine());
         System.out.println("Nhập tên: ");
         String name = scanner.nextLine();
         System.out.println("Nhập tuổi: ");
@@ -138,6 +140,44 @@ public class Main {
         employees[i] = newEmployee;
         return employees;
     }
+    public static Employee[] updateEmployee(Employee[] employees, Scanner scanner){
+        System.out.println("nhập tên cần sửa:");
+        String name = scanner.nextLine();
+        for (int i =0; i< employees.length; i++){
+            if (employees[i].getName().equalsIgnoreCase(name)){
+                if (employees[i] instanceof FullTime) {
+                    System.out.println("Nhập id sửa:");
+                    int id = Integer.parseInt(scanner.nextLine());
+                    employees[i].setId(id);
+                    System.out.println("Nhập tên cần sửa: ");
+                    String name1 = scanner.nextLine();
+                    employees[i].setName(name1);
+                    System.out.println("Nhập tuổi cần sửa:");
+                    int age = Integer.parseInt(scanner.nextLine());
+                    employees[i].setAge(age);
+                    System.out.println("Nhập lương cần sửa:");
+                    int yearOfExperience = Integer.parseInt(scanner.nextLine());
+                    ((FullTime) employees[i]).setYearOfExperience(yearOfExperience);
+                }else {
+                    System.out.println("Nhập id sửa:");
+                    int id = Integer.parseInt(scanner.nextLine());
+                    employees[i].setId(id);
+                    System.out.println("Nhập tên cần sửa: ");
+                    String name1 = scanner.nextLine();
+                    employees[i].setName(name1);
+                    System.out.println("Nhập tuổi cần sửa:");
+                    int age = Integer.parseInt(scanner.nextLine());
+                    employees[i].setAge(age);
+                    System.out.println("Nhập lương cần sửa:");
+                    int wordTime = Integer.parseInt(scanner.nextLine());
+                    ((PartTime) employees[i]).setWordTime(wordTime);
+                }
+
+            }
+        }
+        return employees;
+    }
+
 
 
     public static void displayAll(Employee[] employees){
