@@ -11,8 +11,8 @@ public class FullTime extends Employee{
         this.yearOfExperience = yearOfExperience;
     }
 
-    public FullTime(int id, String name, int age, int yearOfExperience) {
-        super(id, name, age);
+    public FullTime( String name, int age, int yearOfExperience) {
+        super( name, age);
         this.yearOfExperience = yearOfExperience;
     }
 
@@ -30,7 +30,7 @@ public class FullTime extends Employee{
                 "id=" +id +
                 ", tên=" + name +
                 ", tuổi='" +  age + '\'' +
-                ", lương=" + yearOfExperience +
+                ", lương=" + getLuongFullTime() +
                 '}';
     }
 }

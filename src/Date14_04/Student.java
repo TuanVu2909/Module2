@@ -1,27 +1,17 @@
-package BaiTapNgu.Date07_04;
+package Date14_04;
 
-public class Employee {
-     private  static int idUp = 1;
+import java.util.ArrayList;
+
+public class Student {
     String name;
     int age;
-    int id;
 
-    public Employee() {
-        idUp++;
+    public Student() {
     }
 
-    public Employee( String name, int age) {
-        this.id = idUp++;
+    public Student(String name, int age) {
         this.name = name;
         this.age = age;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -42,9 +32,8 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
+        return "Student{" +
+                "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
     }

@@ -11,8 +11,8 @@ public class PartTime extends Employee{
         this.wordTime = wordTime;
     }
 
-    public PartTime(int id, String name, int age, int wordTime) {
-        super(id, name, age);
+    public PartTime( String name, int age, int wordTime) {
+        super( name, age);
         this.wordTime = wordTime;
     }
 
@@ -24,7 +24,7 @@ public class PartTime extends Employee{
     public static void main(String[] args) {
 
     }
-    public int getLuongFullTime(){
+    public int getLuongPartTime(){
        return this.wordTime*25000;
     }
 
@@ -34,7 +34,7 @@ public class PartTime extends Employee{
                 "id=" +id  +
                 ", tên=" + name +
                 ", tuổi='" +  age + '\'' +
-                ", Lương=" + wordTime +
+                ", Lương=" + getLuongPartTime() +
                 '}';
     }
 }

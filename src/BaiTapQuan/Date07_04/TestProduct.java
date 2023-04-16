@@ -1,5 +1,7 @@
 package BaiTapQuan.Date07_04;
 
+import BaiTapQuan.Date07_04.Products;
+
 import java.util.Arrays;
 import java.util.Scanner;
 

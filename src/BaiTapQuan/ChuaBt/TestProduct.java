@@ -1,4 +1,4 @@
-package BaiTapQuan.Date07_04.ChuaBt;
+package BaiTapQuan.ChuaBt;
 
 import java.util.Scanner;
 
