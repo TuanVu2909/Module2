@@ -35,10 +35,14 @@ public class Test {
                     break;
                 case 5:
                     manageStudent.updateStudent();
+                    break;
                 case 6:
                     manageStudent.sortStudentAvg();
+                    break;
+
                 case 7:
                     manageStudent.sumAvg();
+                    break;
                 case 0:
                     System.exit(0);
 

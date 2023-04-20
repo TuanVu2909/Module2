@@ -90,14 +90,14 @@ public class ManageStudent implements Manage {
     }
 
     @Override
-    public void sortStudentAvg() {
+    public int sortStudentAvg() {
         Collections.sort(people, new Comparator<Student>() {
             @Override
             public int compare(Student o1, Student o2) {
                 return (int) (o1.getAvg() - o2.getAvg());
             }
         });
-        people.forEach(student1 -> System.out.println("sửa thành công"));
+        return 0;
     }
 
 
