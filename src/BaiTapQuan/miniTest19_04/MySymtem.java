@@ -6,6 +6,10 @@ import java.util.Scanner;
 public class MySymtem {
     public static void main(String[] args) {
         StudentManage studentManage = new StudentManage();
+        ClassroomManage classroomManage = new ClassroomManage();
+        classroomManage.disPlayClassroom();
+        classroomManage.addClassroom();
+        classroomManage.disPlayClassroom();
         Scanner scanner = new Scanner(System.in);
 
         int number ;
