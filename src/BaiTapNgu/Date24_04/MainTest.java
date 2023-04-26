@@ -56,12 +56,14 @@ public class MainTest {
             if (!file.exists()){
                 throw  new FileNotFoundException();
             }
-            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
+            FileWriter fileWriter = new FileWriter(file,true);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             for (Account account1 : accountList) {
-                bufferedWriter.write(account1.toString() + "\n");
+                bufferedWriter.write(account1 + "\n");
             }
 
             bufferedWriter.close();
+            fileWriter.close();
             System.out.println("Đăng ký thành công");
 
         }catch (Exception e){
